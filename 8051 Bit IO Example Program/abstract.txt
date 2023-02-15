@@ -1,0 +1,32 @@
+Generic 8051 Bit I/O Example Program
+------------------------------------
+This example program shows how to:
+
+* Declare a Special Function Register (SFR)
+* Declare a Bit in a Bit-Addressable SFR
+* Configure an I/O Port Pin as an Input
+* Read an Input Pin
+* Write an Output Pin
+
+It works with virtually all devices that are 100%-compatible with
+the Standard 8051 Port 1.
+
+You can test this program using the uVision2 Debugger.  I/O Ports
+are completely simulated (input and output) so you can change the
+state of the P1.0 input and watch the state of the P1.1 output as
+it changes.
+
+Buttons are defined for the toolbox which set and clear the P1.0
+pin (see the DEBUG.INI file).  You may use these buttons to change
+the state of P1.0.
+
+
+To test this example program:
+
+1. Start the debugger.
+2. Click on Debug - Go to run the program.
+3. Make sure that View - Periodic Window Update is checked.
+4. Click Peripherals - I/O-Ports - Port 1 to view P1.
+5. Click on the Set P1.0 and Clr P1.0 toolbox buttons.
+6. Watch as P1.1 changes to match P1.0.
+
